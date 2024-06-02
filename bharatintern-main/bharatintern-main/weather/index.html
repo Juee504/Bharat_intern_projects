@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Weather Application">
+    <title>Weather Forecast</title>
+    <link rel="icon" href="clouds.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('C:/Users/HP/Downloads/bharatintern-main/bharatintern-main/weather/fantasy.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <div class="card">
+                <div class="search">
+                    <input type="text" placeholder="Enter city Name" spellcheck="false" id="cityname">
+                    <button id="btn" onclick="check()"><img src="search.png" alt="search"></button>
+                </div>
+                <div class="error">
+                    City Not Found
+                </div>
+                <div class="weather">
+                    <img src="rain.png" class="weather-icon" alt="weather icon">
+                    <h1 class="temp">22°C</h1>
+                    <h2 class="city">New York</h2>
+                    <div class="details">
+                        <div class="col">
+                            <img src="humidity.png" alt="humidity icon">
+                            <div>
+                                <p class="humidity">50%</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="wind.png" alt="wind icon">
+                            <div>
+                                <p class="wind">15 km/hr</p>
+                                <p>Wind</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
